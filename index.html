@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOE AutoCare</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #080808;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        span {
+            color: #168cff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            color: #168cff;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 30px 20px;
+        }
+
+        .hero video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 750px;
+        }
+
+        .content h1 {
+            font-size: clamp(32px, 6vw, 55px);
+        }
+
+        .content p {
+            line-height: 1.8;
+        }
+
+        section {
+            padding: 65px 20px;
+            text-align: center;
+            scroll-margin-top: 20px;
+        }
+
+        section h2 {
+            font-size: 32px;
+        }
+
+        .description {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.9;
+            color: #ccc;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            max-width: 1000px;
+            margin: 30px auto 0;
+        }
+
+        .service {
+            background: #151515;
+            border: 1px solid #252525;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            color: #168cff;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 24px;
+            background: #168cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            padding: 25px;
+            text-align: center;
+            color: #bbb;
+        }
+
+        footer a {
+            color: #168cff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>VOE <span>AutoCare</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+
+        <video autoplay muted loop playsinline>
+            <source src="car.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Welcome to VOE <span>AutoCare</span></h1>
+
+            <p>
+                Premium Automotive Care and Customization.
+                We transform vehicles with quality detailing,
+                stylish upgrades, and professional finishes.
+            </p>
+
+            <a href="#services" class="button">
+                Explore Our Services
+            </a>
+        </div>
+
+    </div>
+
+    <section id="about">
+        <h2>About <span>VOE AutoCare</span></h2>
+
+        <p class="description">
+            VOE AutoCare is dedicated to enhancing the beauty,
+            comfort, and style of every vehicle. From professional
+            detailing to custom interior and exterior upgrades,
+            we help car owners give their vehicles a premium look
+            with attention to detail and quality workmanship.
+        </p>
+
+        <a href="about.html" class="button">
+            Learn More About Us
+        </a>
+    </section>
+
+    <section id="services">
+        <h2>Our <span>Services</span></h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>Car Detailing</h3>
+                <p>Professional cleaning and vehicle care.</p>
+            </div>
+
+            <div class="service">
+                <h3>Car Wrapping</h3>
+                <p>Give your vehicle a fresh, stylish appearance.</p>
+            </div>
+
+            <div class="service">
+                <h3>PPF & Tint</h3>
+                <p>Paint protection film and premium window tinting.</p>
+            </div>
+
+            <div class="service">
+                <h3>Interior Customization</h3>
+                <p>Seat wrapping, upholstery, ambient lighting,
+                   and VIP seat upgrades.</p>
+            </div>
+
+            <div class="service">
+                <h3>Car Painting</h3>
+                <p>Refresh your vehicle with a new finish.</p>
+            </div>
+
+            <div class="service">
+                <h3>Under-Car Wash</h3>
+                <p>Cleaning underneath your vehicle.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With <span>Us</span></h2>
+
+        <p class="description">
+            Follow our work, discover our transformations,
+            and keep up with VOE AutoCare.
+        </p>
+
+        <!-- Replace the link below with the real TikTok profile -->
+        <a href=https://www.tiktok.com/@voe_autocare1?_r=1&_t=ZS-9AfNCc99mYH
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button">
+            Visit Our TikTok
+        </a>
+    </section>
+
+    <footer>
+        <p>VOE AutoCare | Premium Automotive Care</p>
+        <p>Designed with care.</p>
+    </footer>
+
+</body>
+</html>
+
